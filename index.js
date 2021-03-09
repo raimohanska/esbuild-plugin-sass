@@ -74,7 +74,7 @@ async function replaceUrls(css, newCssFileName, sourceDir, rootDir) {
             type: "String",
             // disable keeping query and hash parts of original url, since esbuild doesn't support it yet
             // value: `"${relativePath}${resolved.query}${resolved.hash}"`,
-            value: `"${relativePath}"`,
+            value: `"${resolved.file}"`,
           };
         }
       }
